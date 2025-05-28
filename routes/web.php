@@ -1,12 +1,14 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\VideogameController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Videogame routes
+Route::get('/', [VideogameController::class, 'index'])->name('home');
+Route::get('/videogames/{videogame}', [VideogameController::class, 'show'])->name('videogames.show');
 
+// Authentication routes
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
