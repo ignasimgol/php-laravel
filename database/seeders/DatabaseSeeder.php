@@ -17,7 +17,10 @@ class DatabaseSeeder extends Seeder
 
         User::factory()->create([
             'name' => 'Test User',
-            'email' => 'test@example.com',
+            'email' => 'admin2@fakemail.com',
         ]);
+        
+        // Call the VideogameSeeder
+        $this->call(VideogameSeeder::class);
     }
 }
