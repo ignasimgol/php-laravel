@@ -24,9 +24,7 @@ class Videogame extends Model
         'cover_image',
     ];
 
-    /**
-     * Get the genres associated with the videogame.
-     */
+ 
     public function genres()
     {
         return $this->belongsToMany(Genre::class, 'genre_videogame');
