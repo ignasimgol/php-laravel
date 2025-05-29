@@ -10,11 +10,11 @@
     <nav class="bg-white shadow-lg mb-6">
         <div class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <div class="flex space-x-4">
-                    <a href="{{ route('home') }}" class="text-gray-700 hover:text-gray-900">Home</a>
-                    <a href="/api/videogames" class="text-gray-700 hover:text-gray-900">API_videogames</a>
-                    <a href="/api/videogame" class="text-gray-700 hover:text-gray-900">API_videogame</a>
-                    <a href="/api/genre" class="text-gray-700 hover:text-gray-900">API_genre</a>
+                <div class="flex space-x-4 gap-4">
+                    <a href="{{ route('home') }}" class="text-black-700 hover:text-blue-300 hover:underline">Home</a>
+                    <a href="/api/videogames" class="text-black-700 hover:text-blue-300 hover:underline">API_videogames</a>
+                    <a href="/api/videogame" class="text-black-700 hover:text-blue-300 hover:underline">API_videogame</a>
+                    <a href="/api/genre" class="text-black-700 hover:text-blue-300 hover:underline">API_genre</a>
                 </div>
 
                 <div class="flex items-center space-x-4">
